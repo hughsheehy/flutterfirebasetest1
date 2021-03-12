@@ -11,7 +11,7 @@
     Fore more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-  <base href="https://hughsheehy.github.io/flutterfirebasetest1/">
+  <base href="./">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -36,10 +36,30 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3511338781');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=61967603');
       });
     }
   </script>
+      <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+          <!-- Firebase Configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCaJsOhOxFNUC50KNTn1L-Lbbs7rgVL2f4",
+        authDomain: "fir-flutter-codelab-13b8a.firebaseapp.com",
+        databaseURL: "https://fir-flutter-codelab-13b8a.firebaseio.com",
+        projectId: "fir-flutter-codelab-13b8a",
+        storageBucket: "fir-flutter-codelab-13b8a.appspot.com",
+        messagingSenderId: "345844634544",
+        appId: "1:345844634544:android:ceb74c4abdcd218e89fc75",
+        // measurementId: "G-...",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
